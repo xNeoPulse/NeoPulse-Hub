@@ -21,7 +21,7 @@ local HttpGet = game.HttpGet;
 local GameId: number = game.GameId;
 
 local Games: {[number]: string} = loadstring(
-  HttpGet(game, "https://raw.githubusercontent.com/xNeoPulse/NeoPulse-Hub/refs/heads/main/GameList.lua")
+  HttpGet(game, "https://raw.githubusercontent.com/xNeoPulse/NeoPulse-Hub/main/Game%20List.lua")
 )() :: any
 
 local URL: string? = Games[GameId];
